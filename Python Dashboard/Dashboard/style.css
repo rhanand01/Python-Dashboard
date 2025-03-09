@@ -1,0 +1,224 @@
+.stApp {  
+   background-color: #e8ebeb;  
+ }  
+ h1, h2, h3 {  
+   font-family: 'Roboto', sans-serif;  
+   color: #333;  
+ }  
+ [data-testid='stHeader'], [data-testid='stMarkdownContainer'] {  
+   background: rgba(0,0,0,0);  
+ }  
+ div.block-container {padding-top:1.2rem;}  
+ 
+ .stSelectbox, .stDateInput, .stMultiselect {  
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);  
+   border-radius: 8px;  
+   padding: 4px;  
+   font-size: 0.6rem;  
+ }  
+ 
+ .stSelectbox:hover, .stDateInput:hover, .stMultiselect:hover {  
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);  
+ }  
+ 
+ /* Metric Box Styles   */
+ .metric-container, .summary-container {  
+   display: flex;  
+   flex-wrap: wrap;  
+   justify-content: space-between; 
+ }
+ .metric-box, .summary-box {  
+   background-color: #ffff;  
+   border-radius: 8px;  
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);  
+   padding: 16px;  
+   margin: 8px;  
+   width: calc(22% - 16px);  
+   text-align: center;  
+   flex-grow: 1;  
+ }  
+ 
+ .metric-box:hover, .summary-box:hover {  
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);  
+ }  
+ 
+ .metric-box .metric-value, .summary-box .summary-value {  
+   font-size: 24px;  
+   font-weight: bold;  
+   color: #333;  
+   transition: all 0.2s ease-in-out;  
+ }  
+ 
+ .metric-box .metric-value:hover, .summary-box .summary-value:hover {  
+   font-size: 28px;  
+   color: #34C759;  
+ }  
+ 
+ .metric-box .metric-label, .summary-box .summary-label {  
+   font-size: 14px;  
+   color: #666;  
+ }
+ 
+ /* overall css */
+ .met-container {
+   display: flex;
+   flex-direction: column;
+   gap: 0px;
+ }
+ .met-section {
+   display: flex;
+   flex-direction: column;
+   gap: 0px;
+ }
+ .met-title {
+   font-size: 1.5em;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 10px;
+   text-align: left;
+ }
+ .met-row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0px;
+   justify-content: space-around;
+ }
+ .met-box {
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+   padding: 16px;
+   margin: 8px;
+   width: calc(22% - 16px);
+   text-align: center;
+   flex-grow: 1;
+ }
+ .met-box:hover {
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+ }
+ .met-box .met-value {
+   font-size: 24px;
+   font-weight: bold;
+   color: #333;
+   transition: all 0.2s ease-in-out;
+ }
+ .met-box .met-value:hover {
+   font-size: 28px;
+   color: #34C759;
+ }
+ .met-box .met-label {
+   font-size: 14px;
+   color: #666;
+ }
+ 
+ /* Styling the summary box with padding and border */
+ .summary-box {
+ border: 2px solid #fff; /* Light grey border */
+ padding: 20px;
+ width: 100%;
+ max-width: 800px; /* Limit the width of the box */
+ background-color: #fff; /* Light background color */
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding some shadow for depth */
+ }
+ 
+ /* Styling the summary value section */
+ .summary-value {
+ font-size: 18px;
+ font-weight: bold;
+ text-align: center;
+ margin-bottom: 20px; /* Spacing between title and content */
+ }
+ 
+ /* Styling each summary label */
+ .summary-label {
+ font-size: 16px;
+ margin-bottom: 10px;
+ line-height: 1.5; /* Spacing between lines */
+ text-align: justify;
+ }
+ 
+ /* Bold the number values to highlight them */
+ .summary-label b {
+ color: #6d42e4;
+ }
+ 
+ /* Optional: Adding responsiveness */
+ @media screen and (max-width: 768px) {
+ .summary-box {
+  width: 100%;
+  padding: 10px;
+ }
+ .summary-value {
+  font-size: 16px;
+ }
+ .summary-label {
+  font-size: 14px;
+ }
+ }
+ 
+ /*CSS for tabs */
+ .streamlit-expanderHeader {
+ background-color: #f1f1f1; 
+ /* border-radius: 8px; */
+ padding: 10px;
+ /* margin: 5px 0; */
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+ }
+ .stTabs [data-testid="stTab"] {
+ /* background-color: #ffffff; */
+ padding: 5px;
+ border-radius: 10px;
+ border: 2px solid #dfe7df; 
+ box-shadow : 2px 2px 5px rgba(0, 0, 0, 0.1); 
+ }
+ .stTabs [data-testid="stTab"]:hover {
+ background-color: #f1f1f1;
+ }
+ 
+ 
+ /* download file css */
+ .download-container {
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ z-index: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ }
+ .dropdown-container {
+ position: relative;
+ display: inline-block;
+ }
+ .dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: white;
+ border: 1px solid #ddd;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+ z-index: 1;
+ min-width: 120px;
+ }
+ .dropdown-content a {
+ color: black;
+ padding: 10px 12px;
+ text-decoration: none;
+ display: block;
+ font-size: 14px;
+ }
+ .dropdown-content a:hover {
+ background-color: #f4f4f4;
+ }
+ .dropdown-container:hover .dropdown-content {
+ display: block;
+ }
+ .dropdown-container img {
+ cursor: pointer;
+ width: 16px;  /* Reduced the image size */
+ height: 16px;
+ }
+ 
+
+ 
+ 
